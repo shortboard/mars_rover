@@ -32,5 +32,6 @@ a time. The plateau recieves it's size at creation and has functions for creatin
 they are contained in the bounds of the plateau), it also allows a string of instructions to be sent to the rovers.  
   
 _ps. I'm relatively new to Ruby so I apologize for any style goofs i may have made. I am much_ _more experienced with Javascript_
-_and C# so possibly i should have used them, however i thought it would be more fun to do this__task with Ruby so i went with_ 
+_and C# so possibly i should have used them, however i thought it would be more fun to do this_
+_task with Ruby so i went with_ 
 _it (and it was!)._
