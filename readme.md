@@ -29,8 +29,8 @@ Design
 ------
 I tried to contain as much code in it's logical class as posible. A mars rover only recieves simple instructions one at
 a time. The plateau recieves it's size at creation and has functions for creating rovers (which it holds in an array, because
-they are contained in the bounds of the plateau), it also allows a string of instructions to be sent to the rovers.
-
-ps. I'm relatively new to Ruby so I apologize for any style goofs i may have made. I am much more experienced with Javascript
-and C# so possibly i should have used them, however i thought it would be more fun to do this task with Ruby so i went with 
-it (and it was!).
+they are contained in the bounds of the plateau), it also allows a string of instructions to be sent to the rovers.  
+  
+_ps. I'm relatively new to Ruby so I apologize for any style goofs i may have made. I am much_ _more experienced with Javascript_
+_and C# so possibly i should have used them, however i thought it would be more fun to do this__task with Ruby so i went with_ 
+_it (and it was!)._
