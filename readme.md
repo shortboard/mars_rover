@@ -12,7 +12,7 @@ To Run
 * `rake` - will run the tests and the execute the program with input.txt as input
 * `rake execute` - will run the program with input.txt as input
 * `rake test` - will just run rspec
-* `ruby "FILENAME"` - to run with a custom file run 
+* `ruby "FILENAME"` - to run with a custom file
 
 Technologies Used
 -----------------
