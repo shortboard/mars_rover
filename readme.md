@@ -3,9 +3,9 @@ Mars Rover
 
 Contact Details
 ---------------
-Damien Simpson
-shortboard@iinet.net.au
-github.com/shortboard
+Damien Simpson  
+shortboard@iinet.net.au  
+github.com/shortboard  
 
 To Run
 ------
