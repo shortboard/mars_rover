@@ -1,0 +1,9 @@
+task default: [:test, :execute]
+
+task :test do
+  sh "rspec"
+end
+
+task :execute do
+  sh "ruby main.rb input.txt"
+end
