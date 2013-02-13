@@ -10,54 +10,34 @@ describe "The rover" do
 	end
   it "gets and sets x correctly" do
     rover = Rover.new
-    rover.x.should be 0
-    rover.x = 27
-    rover.x.should be 27
-    rover.x = -100
-    rover.x.should be -100
+    expect {rover.x = 27}.to change {rover.x}.from(0).to(27)
+    expect {rover.x = -100}.to change {rover.x}.from(27).to(-100)
   end
   it "gets and sets y correctly" do
     rover = Rover.new
-    rover.y.should be 0
-    rover.y = 27
-    rover.y.should be 27
-    rover.y = -100
-    rover.y.should be -100
+    expect {rover.y = 27}.to change {rover.y}.from(0).to(27)
+    expect {rover.y = -100}.to change {rover.y}.from(27).to(-100)
   end
   it "gets and sets the direction correctly" do
   	rover = Rover.new
-  	rover.direction.should == 'N'
-  	rover.direction = 'S'
-  	rover.direction.should == 'S'
+  	expect {rover.direction = 'S'}.to change{rover.direction}.from('N').to('S')
   end
   it "can turn left" do
   	rover = Rover.new
-  	rover.direction.should == 'N'
-  	rover.turnLeft
-  	rover.direction.should == 'W'
-  	rover.turnLeft
-  	rover.direction.should == 'S'
-  	rover.turnLeft
-  	rover.direction.should == 'E'
+  	expect {rover.turnLeft}.to change {rover.direction}.from('N').to('W')
+  	expect {rover.turnLeft}.to change {rover.direction}.from('W').to('S')
+  	expect {rover.turnLeft}.to change {rover.direction}.from('S').to('E')
   end
   it "can turn right" do
   	rover = Rover.new
-  	rover.direction = 'N'
-  	rover.direction.should == 'N'
-  	rover.turnRight
-  	rover.direction.should == 'E'
-  	rover.turnRight
-  	rover.direction.should == 'S'
-  	rover.turnRight
-  	rover.direction.should == 'W'
+  	expect {rover.turnRight}.to change {rover.direction}.from('N').to('E')
+  	expect {rover.turnRight}.to change {rover.direction}.from('E').to('S')
+    expect {rover.turnRight}.to change {rover.direction}.from('S').to('W')
   end
   it "can move forward" do
   	rover = Rover.new
-  	rover.moveForward
-  	rover.moveForward
+  	expect {rover.moveForward}.to change {rover.y}.by(1)
   	rover.turnRight
-  	rover.moveForward
-  	rover.y.should be 2
-  	rover.x.should be 1
+  	expect {rover.moveForward}.to change {rover.x}.by(1)
   end
 end
